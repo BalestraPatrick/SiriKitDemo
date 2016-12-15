@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEEA83641E014D2100738A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA83631E014D2100738A71 /* AppDelegate.swift */; };
+		AEEA83661E014D2100738A71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA83651E014D2100738A71 /* ViewController.swift */; };
+		AEEA83691E014D2100738A71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEA83671E014D2100738A71 /* Main.storyboard */; };
+		AEEA836B1E014D2100738A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEA836A1E014D2100738A71 /* Assets.xcassets */; };
+		AEEA836E1E014D2100738A71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEA836C1E014D2100738A71 /* LaunchScreen.storyboard */; };
+		AEEA83A21E015DD500738A71 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA83A11E015DD500738A71 /* IntentHandler.swift */; };
+		AEEA83A91E015DD500738A71 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEA83851E015BB300738A71 /* IntentsUI.framework */; };
+		AEEA83AC1E015DD500738A71 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA83AB1E015DD500738A71 /* IntentViewController.swift */; };
+		AEEA83AF1E015DD500738A71 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEA83AD1E015DD500738A71 /* MainInterface.storyboard */; };
+		AEEA83B31E015DD500738A71 /* ExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEEA83A81E015DD500738A71 /* ExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AEEA83B61E015DD500738A71 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEEA839F1E015DD500738A71 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEEA83B11E015DD500738A71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEEA83581E014D2000738A71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEEA83A71E015DD500738A71;
+			remoteInfo = ExtensionUI;
+		};
+		AEEA83B41E015DD500738A71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEEA83581E014D2000738A71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEEA839E1E015DD500738A71;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEEA839A1E015BB300738A71 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AEEA83B61E015DD500738A71 /* Extension.appex in Embed App Extensions */,
+				AEEA83B31E015DD500738A71 /* ExtensionUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AEEA83601E014D2100738A71 /* TutsplusPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutsplusPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEA83631E014D2100738A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEEA83651E014D2100738A71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEEA83681E014D2100738A71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEEA836A1E014D2100738A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEEA836D1E014D2100738A71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEEA836F1E014D2100738A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEEA83751E014D2E00738A71 /* TutsplusPayments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TutsplusPayments.entitlements; sourceTree = "<group>"; };
+		AEEA83851E015BB300738A71 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		AEEA839F1E015DD500738A71 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEA83A11E015DD500738A71 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		AEEA83A31E015DD500738A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEEA83A81E015DD500738A71 /* ExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEA83AB1E015DD500738A71 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		AEEA83AE1E015DD500738A71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AEEA83B01E015DD500738A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEEA835D1E014D2100738A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEA839C1E015DD500738A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEA83A51E015DD500738A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEA83A91E015DD500738A71 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEEA83571E014D2000738A71 = {
+			isa = PBXGroup;
+			children = (
+				AEEA83621E014D2100738A71 /* TutsplusPayments */,
+				AEEA83A01E015DD500738A71 /* Extension */,
+				AEEA83AA1E015DD500738A71 /* ExtensionUI */,
+				AEEA83841E015BB300738A71 /* Frameworks */,
+				AEEA83611E014D2100738A71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEEA83611E014D2100738A71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEEA83601E014D2100738A71 /* TutsplusPayments.app */,
+				AEEA839F1E015DD500738A71 /* Extension.appex */,
+				AEEA83A81E015DD500738A71 /* ExtensionUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEEA83621E014D2100738A71 /* TutsplusPayments */ = {
+			isa = PBXGroup;
+			children = (
+				AEEA83751E014D2E00738A71 /* TutsplusPayments.entitlements */,
+				AEEA83631E014D2100738A71 /* AppDelegate.swift */,
+				AEEA83651E014D2100738A71 /* ViewController.swift */,
+				AEEA83671E014D2100738A71 /* Main.storyboard */,
+				AEEA836A1E014D2100738A71 /* Assets.xcassets */,
+				AEEA836C1E014D2100738A71 /* LaunchScreen.storyboard */,
+				AEEA836F1E014D2100738A71 /* Info.plist */,
+			);
+			path = TutsplusPayments;
+			sourceTree = "<group>";
+		};
+		AEEA83841E015BB300738A71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEEA83851E015BB300738A71 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEEA83A01E015DD500738A71 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AEEA83A11E015DD500738A71 /* IntentHandler.swift */,
+				AEEA83A31E015DD500738A71 /* Info.plist */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AEEA83AA1E015DD500738A71 /* ExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				AEEA83AB1E015DD500738A71 /* IntentViewController.swift */,
+				AEEA83AD1E015DD500738A71 /* MainInterface.storyboard */,
+				AEEA83B01E015DD500738A71 /* Info.plist */,
+			);
+			path = ExtensionUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEEA835F1E014D2100738A71 /* TutsplusPayments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEEA83721E014D2100738A71 /* Build configuration list for PBXNativeTarget "TutsplusPayments" */;
+			buildPhases = (
+				AEEA835C1E014D2100738A71 /* Sources */,
+				AEEA835D1E014D2100738A71 /* Frameworks */,
+				AEEA835E1E014D2100738A71 /* Resources */,
+				AEEA839A1E015BB300738A71 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEEA83B21E015DD500738A71 /* PBXTargetDependency */,
+				AEEA83B51E015DD500738A71 /* PBXTargetDependency */,
+			);
+			name = TutsplusPayments;
+			productName = SiriKit;
+			productReference = AEEA83601E014D2100738A71 /* TutsplusPayments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEEA839E1E015DD500738A71 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEEA83BA1E015DD500738A71 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				AEEA839B1E015DD500738A71 /* Sources */,
+				AEEA839C1E015DD500738A71 /* Frameworks */,
+				AEEA839D1E015DD500738A71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = AEEA839F1E015DD500738A71 /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AEEA83A71E015DD500738A71 /* ExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEEA83B71E015DD500738A71 /* Build configuration list for PBXNativeTarget "ExtensionUI" */;
+			buildPhases = (
+				AEEA83A41E015DD500738A71 /* Sources */,
+				AEEA83A51E015DD500738A71 /* Frameworks */,
+				AEEA83A61E015DD500738A71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtensionUI;
+			productName = ExtensionUI;
+			productReference = AEEA83A81E015DD500738A71 /* ExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEEA83581E014D2000738A71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Patrick Balestra";
+				TargetAttributes = {
+					AEEA835F1E014D2100738A71 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 2EZDW5DVTJ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					AEEA839E1E015DD500738A71 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 2EZDW5DVTJ;
+						ProvisioningStyle = Automatic;
+					};
+					AEEA83A71E015DD500738A71 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 2EZDW5DVTJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AEEA835B1E014D2000738A71 /* Build configuration list for PBXProject "TutsplusPayments" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEEA83571E014D2000738A71;
+			productRefGroup = AEEA83611E014D2100738A71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEEA835F1E014D2100738A71 /* TutsplusPayments */,
+				AEEA839E1E015DD500738A71 /* Extension */,
+				AEEA83A71E015DD500738A71 /* ExtensionUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEEA835E1E014D2100738A71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEA836E1E014D2100738A71 /* LaunchScreen.storyboard in Resources */,
+				AEEA836B1E014D2100738A71 /* Assets.xcassets in Resources */,
+				AEEA83691E014D2100738A71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEA839D1E015DD500738A71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEA83A61E015DD500738A71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEA83AF1E015DD500738A71 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEEA835C1E014D2100738A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEA83661E014D2100738A71 /* ViewController.swift in Sources */,
+				AEEA83641E014D2100738A71 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEA839B1E015DD500738A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEA83A21E015DD500738A71 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEA83A41E015DD500738A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEA83AC1E015DD500738A71 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEEA83B21E015DD500738A71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEEA83A71E015DD500738A71 /* ExtensionUI */;
+			targetProxy = AEEA83B11E015DD500738A71 /* PBXContainerItemProxy */;
+		};
+		AEEA83B51E015DD500738A71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEEA839E1E015DD500738A71 /* Extension */;
+			targetProxy = AEEA83B41E015DD500738A71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEEA83671E014D2100738A71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEEA83681E014D2100738A71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEEA836C1E014D2100738A71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEEA836D1E014D2100738A71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AEEA83AD1E015DD500738A71 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEEA83AE1E015DD500738A71 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEEA83701E014D2100738A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AEEA83711E014D2100738A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEEA83731E014D2100738A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TutsplusPayments/TutsplusPayments.entitlements;
+				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
+				INFOPLIST_FILE = "$(SRCROOT)/TutsplusPayments/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AEEA83741E014D2100738A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TutsplusPayments/TutsplusPayments.entitlements;
+				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
+				INFOPLIST_FILE = "$(SRCROOT)/TutsplusPayments/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AEEA83B81E015DD500738A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
+				INFOPLIST_FILE = ExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit.ExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AEEA83B91E015DD500738A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
+				INFOPLIST_FILE = ExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit.ExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AEEA83BB1E015DD500738A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AEEA83BC1E015DD500738A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEEA835B1E014D2000738A71 /* Build configuration list for PBXProject "TutsplusPayments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEA83701E014D2100738A71 /* Debug */,
+				AEEA83711E014D2100738A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEEA83721E014D2100738A71 /* Build configuration list for PBXNativeTarget "TutsplusPayments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEA83731E014D2100738A71 /* Debug */,
+				AEEA83741E014D2100738A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEEA83B71E015DD500738A71 /* Build configuration list for PBXNativeTarget "ExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEA83B81E015DD500738A71 /* Debug */,
+				AEEA83B91E015DD500738A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEEA83BA1E015DD500738A71 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEA83BB1E015DD500738A71 /* Debug */,
+				AEEA83BC1E015DD500738A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEEA83581E014D2000738A71 /* Project object */;
+}
