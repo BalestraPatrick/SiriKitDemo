@@ -23,9 +23,12 @@ class IntentHandler: INExtension {
 extension IntentHandler: INSendPaymentIntentHandling {
 
     func handle(sendPayment intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
-        guard let payee = intent.payee, let amount = intent.currencyAmount, let note = intent.note else {
+        // Check that we have valid values for payee and currencyAmount
+        guard let payee = intent.payee, let amount = intent.currencyAmount else {
             return completion(INSendPaymentIntentResponse(code: .failure, userActivity: nil))
         }
-        return completion(INSendPaymentIntentResponse(code: .success, userActivity: nil))
+        // Make your payment!
+        print("Sending \(amount) payment to \(payee)!")
+        completion(INSendPaymentIntentResponse(code: .success, userActivity: nil))
     }
 }
