@@ -477,7 +477,7 @@
 				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
 				INFOPLIST_FILE = "$(SRCROOT)/TutsplusPayments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.tutspluspayments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -492,7 +492,7 @@
 				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
 				INFOPLIST_FILE = "$(SRCROOT)/TutsplusPayments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.tutspluspayments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -504,7 +504,7 @@
 				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
 				INFOPLIST_FILE = ExtensionUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit.ExtensionUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.tutspluspayments.ExtensionUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -517,7 +517,7 @@
 				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
 				INFOPLIST_FILE = ExtensionUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit.ExtensionUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.tutspluspayments.ExtensionUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -530,7 +530,7 @@
 				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
 				INFOPLIST_FILE = Extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.tutspluspayments.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -543,7 +543,7 @@
 				DEVELOPMENT_TEAM = 2EZDW5DVTJ;
 				INFOPLIST_FILE = Extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.SiriKit.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickbalestra.tutspluspayments.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
