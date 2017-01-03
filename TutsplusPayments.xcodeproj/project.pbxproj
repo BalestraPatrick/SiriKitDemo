@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE09DF821E0C7A1500D64675 /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = AE09DF811E0C7A1500D64675 /* money.png */; };
+		AE3323B71E1C6BB700C197E9 /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3323B61E1C6BB700C197E9 /* money.png */; };
 		AEEA83641E014D2100738A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA83631E014D2100738A71 /* AppDelegate.swift */; };
 		AEEA83661E014D2100738A71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA83651E014D2100738A71 /* ViewController.swift */; };
 		AEEA83691E014D2100738A71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEA83671E014D2100738A71 /* Main.storyboard */; };
@@ -54,7 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AE09DF811E0C7A1500D64675 /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
+		AE3323B61E1C6BB700C197E9 /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
 		AEEA83601E014D2100738A71 /* TutsplusPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutsplusPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEA83631E014D2100738A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEEA83651E014D2100738A71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		AE09DF831E0C836300D64675 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				AE09DF811E0C7A1500D64675 /* money.png */,
+				AE3323B61E1C6BB700C197E9 /* money.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -301,7 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE09DF821E0C7A1500D64675 /* money.png in Resources */,
+				AE3323B71E1C6BB700C197E9 /* money.png in Resources */,
 				AEEA83AF1E015DD500738A71 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
